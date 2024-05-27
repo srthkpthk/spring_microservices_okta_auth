@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/srthkpthk/microservice-config.git
+          clone-on-start: true
+          default-label: stable
+  output:
+    ansi:
+      enabled: ALWAYS
+server:
+  port: 8085
